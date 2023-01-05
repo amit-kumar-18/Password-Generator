@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <!-- Main Container -->
+    <div class="container">
+      <h1>Password Generator</h1>
+
+      <!-- Password Field -->
+      <div class="password">
+        <div id="password">PASSWORD</div>
+      </div>
+      <div class="function-btns">
+        <button type="button" id="copy-password">
+          <i class="fa-solid fa-copy"></i>
+        </button>
+        <button type="button" id="refresh-btn" class="refresh-btn">
+          <i class="fa-solid fa-arrows-rotate"></i>
+        </button>
+      </div>
+
+      <!-- Slider -->
+      <div class="length_slider">
+        <small class="length"> LENGTH : <span id="length">12</span> </small>
+        <small id="min">1</small>
+        <input
+          type="range"
+          min="1"
+          max="20"
+          value="12"
+          class="slider"
+          id="myRange"
+        />
+        <small id="max">20</small>
+      </div>
+
+      <!-- Password Options -->
+      <div class="settings">
+        <h2>SETTINGS</h2>
+        <div class="inner-settings">
+          <small>Include Uppercase</small>
+          <input
+            class="toggle-switch"
+            type="checkbox"
+            id="toggle-btn-1"
+            checked
+          />
+          <label for="toggle-btn-1"></label>
+        </div>
+        <div class="inner-settings">
+          <small>Include Lowercase</small>
+          <input
+            class="toggle-switch"
+            type="checkbox"
+            id="toggle-btn-2"
+            checked
+          />
+          <label for="toggle-btn-2"></label>
+        </div>
+        <div class="inner-settings">
+          <small>Include Numbers</small>
+          <input class="toggle-switch" type="checkbox" id="toggle-btn-3" />
+          <label for="toggle-btn-3"></label>
+        </div>
+        <div class="inner-settings">
+          <small>Include Symbols</small>
+          <input class="toggle-switch" type="checkbox" id="toggle-btn-4" />
+          <label for="toggle-btn-4"></label>
+        </div>
+      </div>
+
+      <!-- Generate Button -->
+      <button id="btn" type="button">GENERATE PASSWORD</button>
+    </div>
+
+    <!-- Popup Message -->
+    <div class="popup">
+      <h2>Password Copied to Clipboard</h2>
+    </div>
+  </body>
+</html>
