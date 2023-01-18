@@ -1,4 +1,4 @@
-# TO-DO List App
+# Password Generato App
 
 ![Design preview for the Password Generator App](./design/Desktop%20Design.png)
 
@@ -20,7 +20,7 @@ Your users should be able to:
 - See hover states for all interactive elements on the page.
 - Choose Password length and options i.e numbers/symbols/uppercase/lowercase.
 - Generate Random Password and use both copy and refresh password functionality through clickable buttons.
-- Recieve a confirmation when copied.
+- Receive a confirmation when copied.
 
 ## Where to find everything
 
